@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             role="tab"
             className={`tab ${
               pathname === "/services" ? "tab-active" : ""
-            } font-bold`}
+            } font-bold hover:tab-active`}
             href="/services"
           >
             Services
