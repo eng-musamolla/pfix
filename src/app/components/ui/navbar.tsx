@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             role="tab"
             className={`tab ${
               pathname === "/aboutUs" ? "tab-active" : ""
-            } font-bold hover:tab-active`}
+            } font-bold hover:tab-active hover:bg-red-500`}
             href="/aboutUs"
           >
             About Us
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
             role="tab"
             className={`tab ${
               pathname === "/serviceRequest" ? "tab-active" : ""
-            } font-bold hover:tab-active`}
+            } font-bold hover:tab-active hover:bg-red-500`}
             href="/serviceRequest"
           >
             Service Request

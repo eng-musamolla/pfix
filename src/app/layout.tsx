@@ -2,8 +2,9 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./components/ui/navbar";
+import Footer from "./components/ui/footer";
+import InputFrom from "./components/ui/form";
 // const Navbar = dynamic(() => import("./navbar"), { ssr: false });
 // const Footer = dynamic(() => import("./footer"), { ssr: true });
 
@@ -22,7 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="h-full">
         <Navbar />
-        {children}
+        <main className="pt-20 bg-slate-300 text-blue-50">
+          <InputFrom />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
