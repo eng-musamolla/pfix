@@ -3,7 +3,7 @@ import Image from "next/image";
 import printerRepair from "/public/image/printerRepair1.jpg";
 
 export const metadata: Metadata = {
-  title: "PFIX",
+  title: "PFIX | Home",
   description:
     "প্রিন্টার ও ফটোকপি মেশিনের সব সমস্যার নির্ভরযোগ্য সমাধান। সকল ব্র্যান্ডের সেবা দিয়ে থাকি। বাসা এবং অফিস সার্ভিস (ঢাকা সিটি)",
 };

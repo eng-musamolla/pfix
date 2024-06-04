@@ -18,6 +18,13 @@ const addVariablesForColors = ({ addBase, theme }: any) => {
 const config: Config = {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
+  // purge: {
+  //   enabled: process.env.NODE_ENV === 'production',
+  //   content: [
+  //     './components/**/*.{js,ts,jsx,tsx}', 
+  //     './pages/**/*.{js,ts,jsx,tsx}'
+  //   ],
+  // },
   theme: {
     extend: {
       backgroundImage: {
@@ -43,9 +50,7 @@ const config: Config = {
           }
         }
       },
-      // animation: {
-      //   rotate: 'rotate 2s ease-in-out infinite',
-      // },
+  
       boxShadow: {
         input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },

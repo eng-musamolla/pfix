@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
               key={index} // Add key prop with a unique value
               role="tab"
               className={`tab ${
-                pathname === `${menu.link}` ? "tab-active" : ""
+                pathname === `${menu.link}` ? "tab-active" : "text-slate-600"
               } font-bold  hover:tab-active`}
               href={menu.link}
             >
@@ -83,12 +83,12 @@ const Navbar: React.FC = () => {
             </Link>
           ))}
         </div>
-        <div role="tab" className="tab flex gap-2 content-center items-center ">
+        <div className="tab flex gap-2 content-center items-center ">
           <div className="form-control hidden lg:block">
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered w-24 md:w-auto bg-slate-200"
+              className="input input-bordered w-24 md:w-auto bg-slate-200 text-slate-600"
             />
           </div>
           <div className="dropdown dropdown-end hidden sm:block ">
@@ -157,9 +157,9 @@ const Navbar: React.FC = () => {
                     aria-label="close sidebar"
                     className="drawer-overlay"
                   ></label>
-                  <ul className="menu p-4 w-2/3 min-h-full bg-slate-300 text-slate-950 absolute">
+                  <div className="menu p-4 w-2/3 min-h-full bg-slate-300 text-slate-950 absolute">
                     <div className="flex flex-col w-full border-opacity-50">
-                      <div className="grid card rounded-box place-items-stretch">
+                      <ul className="grid card rounded-box place-items-stretch">
                         {mainMenu.map((menu, index) => (
                           <li
                             key={index}
@@ -177,9 +177,9 @@ const Navbar: React.FC = () => {
                             </Link>
                           </li>
                         ))}
-                      </div>
+                      </ul>
                       <div className="divider">User Menu</div>
-                      <div className="grid  card rounded-box place-items-stretch">
+                      <ul className="grid  card rounded-box place-items-stretch">
                         {userMenu.map((menu, index) => (
                           <li
                             key={index}
@@ -197,7 +197,7 @@ const Navbar: React.FC = () => {
                             </Link>
                           </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                     <label
                       htmlFor="smDrawer"
@@ -213,7 +213,7 @@ const Navbar: React.FC = () => {
                         <path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z" />
                       </svg>
                     </label>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
