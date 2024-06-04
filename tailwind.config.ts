@@ -61,7 +61,7 @@ const config: Config = {
     themes: [
       {
         mytheme: {
-          "primary": "purple-600",
+          "primary": "#f6d860",
           "secondary": "#f6d860",
           "accent": "#37cdbe",
           "neutral": "#3d4451",
