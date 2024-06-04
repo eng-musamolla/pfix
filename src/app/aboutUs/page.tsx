@@ -1,4 +1,7 @@
 import { Metadata } from "next";
+import { BackgroundBoxes } from "../components/ui/BackgroundBoxes";
+import { HeroScroll } from "../components/ui/HeroScroll";
+import SignupForm from "../components/ui/SignupForm";
 
 export const metadata: Metadata = {
   title: "PFIX | About Us",
@@ -9,34 +12,13 @@ export const metadata: Metadata = {
 export default function AboutUs() {
   return (
     <div>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
-      <h1>AboutUS</h1>
+      <div className="container mx-auto">
+        {/* <BackgroundBoxes /> */}
+        <HeroScroll />
+        <HeroScroll />
+        <HeroScroll />
+        {/* <SignupForm /> */}
+      </div>
     </div>
   );
 }

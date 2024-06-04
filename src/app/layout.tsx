@@ -4,7 +4,7 @@ import "./globals.css";
 
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
-import InputFrom from "./components/ui/form";
+import InputFrom from "./components/ui/SignupForm";
 // const Navbar = dynamic(() => import("./navbar"), { ssr: false });
 // const Footer = dynamic(() => import("./footer"), { ssr: true });
 
@@ -21,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-full">
+      <body className="h-full w-auto">
         <Navbar />
-        <main className="pt-20 bg-slate-300 text-blue-50">
-          <InputFrom />
+        <main className="pt-20 pb-2 bg-slate-300 text-slate-950 font-semibold">
+          {/* <InputFrom /> */}
           {children}
         </main>
         <Footer />

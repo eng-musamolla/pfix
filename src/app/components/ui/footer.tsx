@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
       <nav className="grid grid-flow-col gap-4">
-        <Link href="/home" className="link link-hover">
+        <Link href="/" className="link link-hover">
           Home
         </Link>
         <Link href="/services" className="link link-hover">
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         </Link>
         <Link
           href="/serviceRequest"
-          className="link link-hover text-purple-400"
+          className="link link-hover text-purple-400 hidden sm:block"
         >
           Service Request
         </Link>

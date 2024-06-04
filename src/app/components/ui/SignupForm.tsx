@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Label } from "../utils/label";
-import { Input } from "../utils/input";
+import { Label } from "./label";
+import { Input } from "./input";
 import { cn } from "../utils/cn";
 import {
   IconBrandGithub,
@@ -9,7 +9,7 @@ import {
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
 
-export default function SignupFormDemo() {
+export default function SignupForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");

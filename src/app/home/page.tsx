@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Image from "next/image";
+import printerRepair from "../../../public/image/printerRepair6.jpg";
 
 export const metadata: Metadata = {
   title: "PFIX | Home",
@@ -9,34 +11,27 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <h1>Home page 1</h1>
-      <h1>Home page 2</h1>
-      <h1>Home page 3</h1>
-      <h1>Home page 4</h1>
-      <h1>Home page 5</h1>
-      <h1>Home page 6</h1>
-      <h1>Home page 7</h1>
-      <h1>Home page 8</h1>
-      <h1>Home page 9</h1>
-      <h1>Home page 10</h1>
-      <h1>Home page 11</h1>
-      <h1>Home page 12</h1>
-      <h1>Home page 13</h1>
-      <h1>Home page 14</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 1</h1>
-      <h1>Home page 100</h1>
+      <div className="hero min-h-screen w-1/12">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          {/* <Image
+            alt="hero"
+            src={printerRepair}
+            className="max-w-sm w-6 h-10 rounded-lg shadow-2xl"
+            height={1024}
+            width={1024}
+          /> */}
+          <div className="">
+            <h1 className="text-5xl font-bold">Printer Repair Service!</h1>
+            <p className="py-6">
+              প্রিন্টার এবং ফটোকপিয়ার মেশিনের সকল সমস্যার নির্ভরযোগ্য সমাধান
+              প্রিন্টার রিপেয়ার সার্ভিস। আমরা সকল ব্র্যান্ডের প্রিন্টার এবং
+              ফটোকপিয়ার মেশিনের সার্ভিসিং এর জন্য ঢাকা শহরের যেকোনো প্রান্তে
+              (বাড়ি বা অফিস) সেবা প্রদান করি।
+            </p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
