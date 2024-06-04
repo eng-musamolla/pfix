@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
     },
     {
       name: "Logout",
-      link: "/logout",
+      link: "/",
     },
   ];
 

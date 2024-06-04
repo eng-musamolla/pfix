@@ -19,7 +19,7 @@ export function HeroScroll() {
         }
       >
         <Image
-          src={`/linear.webp`}
+          src={`https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg`}
           alt="hero"
           height={720}
           width={1400}
