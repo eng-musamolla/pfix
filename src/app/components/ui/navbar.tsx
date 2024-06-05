@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full bg-white flex justify-center py-2 shadow-lg fixed top-0 z-50  items-center">
       <div className="container flex justify-around xl:justify-between items-center content-center">
-        <div className="">
+        <Link href="/">
           <Image
             className="hover:animate-rotate w-24   xl:w-24 2xl:w-28  "
             src={logo}
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             width={130}
             height={130}
           />
-        </div>
+        </Link>
         <div
           role="tablist"
           className="tabs tabs-lifted lg:tabs-lg hidden sm:block"
